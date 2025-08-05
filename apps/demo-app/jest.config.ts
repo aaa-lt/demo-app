@@ -8,12 +8,10 @@ const createJestConfig = nextJest({
 const config: Config = {
   displayName: '@demo-app/demo-app',
   preset: '../../jest.preset.js',
-  transform: {
-    '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
-  },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/apps/demo-app',
   testEnvironment: 'jsdom',
+  forceExit: true,
 };
 
 export default createJestConfig(config);

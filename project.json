@@ -1,0 +1,16 @@
+{
+  "name": "@demo-app/workspace",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": ".",
+  "projectType": "application",
+  "targets": {
+    "depcruise": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "depcruise --config .dependency-cruiser.js .",
+        "cwd": "."
+      }
+    }
+  },
+  "tags": []
+}
