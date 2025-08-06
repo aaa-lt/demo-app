@@ -4,13 +4,7 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/demo-app-e2e"
-    },
-    {
-      "path": "./apps/demo-app"
-    },
-    {
-      "path": "./apps/api-e2e"
+      "path": "./apps/app"
     },
     {
       "path": "./apps/api"

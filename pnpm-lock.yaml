@@ -195,9 +195,7 @@ importers:
 
   apps/api: {}
 
-  apps/api-e2e: {}
-
-  apps/demo-app:
+  apps/app:
     dependencies:
       next:
         specifier: ~15.2.4
@@ -208,8 +206,6 @@ importers:
       react-dom:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
-
-  apps/demo-app-e2e: {}
 
 packages:
 
