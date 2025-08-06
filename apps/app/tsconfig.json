@@ -26,7 +26,7 @@
   },
   "include": [
     ".next/types/**/*.ts",
-    "../../dist/apps/demo-app/.next/types/**/*.ts",
+    "../../dist/apps/app/.next/types/**/*.ts",
     "next-env.d.ts",
     "src/**/*.js",
     "src/**/*.jsx",
