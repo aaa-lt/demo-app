@@ -26,8 +26,6 @@ jobs:
           version: 9.8.0
           run_install: false
 
-      - run: pnpm dlx nx start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="build" --wait
-
       # Cache node_modules
       - uses: actions/setup-node@v4
         with:
@@ -36,7 +34,7 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - run: pnpm exec nx run-many -t typecheck lint depcruise test build --verbose
+      - run: pnpm dlx nx start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="build" --wait
 
       - run: pnpm exec nx fix-ci
         if: always()
