@@ -1,0 +1,16 @@
+{
+  "name": "@demo-app/app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/app/src",
+  "projectType": "application",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit",
+        "cwd": "apps/app"
+      }
+    }
+  },
+  "tags": []
+}

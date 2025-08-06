@@ -1,5 +1,5 @@
 {
-  "name": "@demo-app/demo-app",
+  "name": "@demo-app/app",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
