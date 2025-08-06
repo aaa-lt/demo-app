@@ -6,10 +6,10 @@ const createJestConfig = nextJest({
 });
 
 const config: Config = {
-  displayName: '@demo-app/demo-app',
+  displayName: '@demo-app/app',
   preset: '../../jest.preset.js',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/demo-app',
+  coverageDirectory: '../../coverage/apps/app',
   testEnvironment: 'jsdom',
   forceExit: true,
 };
